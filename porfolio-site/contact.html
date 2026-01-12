@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Jesse using an HTML-only mailto form.">
+  <title>Contact - Jesse's Cozy Cat & Code Portfolio</title>
+</head>
+
+<!--
+  Contact page requirement:
+  Form must open the user's email client and auto-fill an email.
+  Using mailto: in the form action does this (behavior varies by browser/email client).
+-->
+
+<body bgcolor="#2D1E2F" text="#F7F2E8" link="#9BF6FF" vlink="#FFC6FF" alink="#FFD166">
+
+  <header>
+    <h1>Contact</h1>
+    <nav aria-label="Main navigation">
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="projects/index.html">Projects</a> |
+        <a href="gallery/index.html">Gallery</a> |
+        <a href="contact.html">Contact</a>
+      </p>
+    </nav>
+  </header>
+
+  <main>
+    <hr>
+
+    <p>
+      Use the form below to email me. When you click submit, your device should open your email client
+      with the message pre filled
+    </p>
+
+    
+
+    <form action="mailto:jesse.kennelly@du.edu" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Send a Message</legend>
+
+        <p>
+          <label for="name">Your name:</label><br>
+          <input type="text" id="name" name="Name" size="40" required>
+        </p>
+
+        <p>
+          <label for="email">Your email:</label><br>
+          <input type="email" id="email" name="Email" size="40" required>
+        </p>
+
+        <p>
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="Subject" size="60" required>
+        </p>
+
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="Message" rows="8" cols="60" required></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Open Email Client">
+          <input type="reset" value="Clear">
+        </p>
+      </fieldset>
+    </form>
+
+    <hr>
+
+    <section aria-labelledby="alt-contact">
+      <h2 id="alt-contact">Other Ways</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/jessekennelly12">https://github.com/</a> (put your profile link)</li>
+        <li>Itch.io: <a href="https://jesshup.itch.io/">https://itch.io/</a> (put your page link)</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <p><small>HTML-only contact form: mailto edition.</small></p>
+  </footer>
+
+</body>
+</html>

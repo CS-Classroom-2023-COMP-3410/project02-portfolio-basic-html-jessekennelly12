@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Jesse: skills, hobbies, and what I'm building.">
+  <title>About Me - Jesse's Cozy Cat & Code Portfolio</title>
+</head>
+
+<!--
+  About page: includes photo, description, skills/hobbies list.
+  Also includes multiple colors via HTML attributes / font tags (no CSS).
+-->
+
+<body bgcolor="#1B2A41" text="#F7F2E8" link="#7FDBFF" vlink="#D7A9FF" alink="#FF9F1C">
+
+  <header>
+    <h1>About Me</h1>
+    <nav aria-label="Main navigation">
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="projects/index.html">Projects</a> |
+        <a href="gallery/index.html">Gallery</a> |
+        <a href="contact.html">Contact</a>
+      </p>
+    </nav>
+  </header>
+
+  <main>
+    <hr>
+
+    <section aria-labelledby="bio">
+      <h2 id="bio">Bio</h2>
+      <p>
+        Hi I'm Jesse, a student at the University of Denver currently pursuing computer science and Japanese.
+        I enjoy building small game prototypes, learning new programming skills, and exploring creative hobbies. 
+        I'm planning to travel to Japan after graduation to continue my Japanese studies, and hopefully
+        find some more lucky cats.<br>
+        <font color="#FF9F1C">If a grasshopper could talk, would you listen?</font>
+      </p>
+
+      <figure>
+        <img src="gallery/balcony.jpg" width="400"
+             alt="Photo of a campus walkway area (placeholder for my university photo).">
+        <figcaption></figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+
+      <h3>Technical</h3>
+      <ul>
+        <li>Programming: Python, SQL, basic web development</li>
+        <li>Game dev: Godot (2D prototypes), design iteration</li>
+        <li>Data: databases, simple ML pipelines</li>
+      </ul>
+
+      <h3>Creative</h3>
+      <ul>
+        <li>Translation practice (Japanese &rarr; English)</li>
+        <li>Writing &amp; documentation</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="hobbies">
+      <h2 id="hobbies">Hobbies &amp; Things I Like</h2>
+
+      <ol>
+        <li>Video games</li>
+        <li>Japanese study, from kanji practice, reading manga, etc</li>
+        <li>Travel photography</li>
+        <li>Collecting small trinkets</li>
+      </ol>
+
+      <p>
+        Quick gallery teasers:
+      </p>
+
+      <figure>
+        <img src="gallery/drawing.jpg" width="200"
+             alt="A fun image related to ramen and cats, matching the site theme.">
+        <figcaption>My super cool drawing</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gallery/100_1701.JPG" width="200"
+             alt="A photo of a camera (or a camera-related image).">
+        <figcaption>Photography, sometimes I take pictures</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="mini-resume">
+      <h2 id="mini-resume">Mini Resume Table</h2>
+      <table border="1" cellpadding="6" cellspacing="0" summary="A simple resume-style table.">
+        <caption>Highlights</caption>
+        <thead>
+          <tr>
+            <th scope="col">Area</th>
+            <th scope="col">Example</th>
+            <th scope="col">What I Learned</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Game Dev</th>
+            <td>2D platformer prototype</td>
+            <td>Iteration, collision logic, pacing</td>
+          </tr>
+          <tr>
+            <th scope="row">Databases</th>
+            <td>Relational schema + queries</td>
+            <td>Modeling data &amp; thinking in joins</td>
+          </tr>
+          <tr>
+            <th scope="row">Language</th>
+            <td>Translation practice</td>
+            <td>Clarity, nuance, and tone</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><small>This page only uses HTML and awesome</small></p>
+  </footer>
+
+</body>
+</html>
